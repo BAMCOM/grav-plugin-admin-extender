@@ -1,0 +1,44 @@
+name: Admin Extender
+version: 0.1.0
+description: Allows customization
+icon: plug
+author:
+  name: BAM
+  email: info@bamcommunications.ca
+homepage: https://github.com//grav-plugin-
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com//grav-plugin-/issues
+docs: https://github.com//grav-plugin-/blob/develop/README.md
+license: MIT
+
+dependencies:
+    - { name: grav, version: '>=1.1.6' }
+    - 'admin'
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    theme:
+      type: text
+      label: Theme name
+    override_url:
+      type: toggle
+      label: Override Twig "theme_url" variable
+      help: Sets if CSS / JS resources are relative to Grav default admin theme (No), or custom admin theme (Yes)
+      default: 0
+      options:
+        1: Yes
+        0: No
+      validate:
+        type: bool
