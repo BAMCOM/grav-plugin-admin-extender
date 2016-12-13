@@ -9,3 +9,5 @@ This Grav plugin allows customization of the Grav admin interface.
 3. If you want to completely replace all CSS / JS references (`theme_url` variable in Twig) in plugins/admin/themes/grav to your custom theme, change that setting to Yes.
 
 4. Admin Extender adds a `theme_custom_url` variable to your templates (regardless of the override setting) so you can import extend the assets with CSS / JS of your own in your custom theme folder.
+
+ 

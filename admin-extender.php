@@ -9,7 +9,7 @@ use Grav\Common\Plugin;
  */
 class AdminExtenderPlugin extends Plugin
 {
-    /**
+    /** 
      * @return array
      */
     public static function getSubscribedEvents() {
